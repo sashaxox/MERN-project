@@ -15,7 +15,11 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-    }
+    },
+    avatar: {
+      type: String,
+      default: "https://cdn.onlinewebfonts.com/svg/img_568657.png"
+    },
   },
   { timestamps: true }
 );
